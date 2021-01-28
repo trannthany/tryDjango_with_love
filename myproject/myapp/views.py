@@ -1,6 +1,10 @@
-from django.shortcuts import render
+# from django.shortcuts import render
+
+# def hello(request):
+#     return render(request, "myapp/template/hello.html", {})
+
 from django.http import HttpResponse
-# Create your views here.
-def hello(request):
-    text = """<h1>Welcome to my app! </h1>"""
-    return HttpResponse(text)
+
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
